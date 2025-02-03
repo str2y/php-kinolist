@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $val = Validation::validate([
             'name' => ['required'],
-            'email' => ['required', 'email', 'confirmed', 'unique:users'],
+            'email' => ['required', 'email', 'unique:users'],
             'password' => ['required', 'min:8', 'max:32', 'strong']
         ], $_POST);
 

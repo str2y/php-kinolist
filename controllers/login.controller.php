@@ -1,6 +1,6 @@
 <?php
 
-if ($_SESSION['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['login'])) {
 
         $email = $_POST['email'];
@@ -33,7 +33,7 @@ if ($_SESSION['REQUEST_METHOD'] == 'POST') {
             }
 
             $_SESSION['auth'] = $user;
-            flash()->push('msg', 'Welcome ' . $user->name . '!');
+            flash()->push('msg', 'Welcome, ' . $user->name . '!');
             header('location: /');
             exit();
         }

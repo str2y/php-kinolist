@@ -67,13 +67,6 @@ class Validation
         }
     }
 
-    private function confirmed($field, $value, $confirmationValue)
-    {
-        if ($value != $confirmationValue) {
-            $this->vals[] = "The $field.s are different.";
-        }
-    }
-
     private function min($min, $field, $value)
     {
         if (strlen($value) < $min) {

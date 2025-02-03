@@ -21,7 +21,7 @@
             }
             ?>
             <?php if ($vals = flash()->get('vals_login')): ?>
-                <div class="bg-red-900 border-stone-800 text-red-400 px-4 py-1 rounded-md border-2 text-sm font-bold">
+                <div class="mt-4 bg-red-950 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-semibold">
                     <ul>
                         <li>Vixe!! Deu ruim Zé!</li>
                         <?php foreach ($vals as $val): ?>
@@ -31,7 +31,7 @@
                 </div>
             <?php endif; ?>
             <?php if ($vals = flash()->get('vals_register')): ?>
-                <div class="bg-red-900 border-stone-800 text-red-400 px-4 py-1 rounded-md border-2 text-sm font-bold">
+                <div class="mt-4 bg-red-950 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-semibold">
                     <ul>
                         <li>Vixe!! Deu ruim Zé!</li>
                         <?php foreach ($vals as $val): ?>
