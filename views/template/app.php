@@ -10,8 +10,8 @@
 </head>
 <body class="bg-gray-950 text-gray-500">
     <?php if ($msg = flash()->get('msg')): ?>
-        <div class="mx-2 my-4 bg-purple-950 border-gray-800 text-purple-500 px-4 py-1 rounded border text-lg font-semibold">
-            <?= $msg ?>
+        <div class="flex place-content-center mx-1.5 my-1 bg-purple-950 border-gray-800 text-purple-500 px-4 py-1 rounded border text-lg font-semibold">
+            <div><?= $msg ?></div>
         </div>
     <?php endif; ?>
     <?php require "../views/{$view}.view.php"; ?>

@@ -49,7 +49,7 @@ class Validation
         ->fetch();
 
         if($result){
-            $this->vals[] = "The $field is already in use.";
+            $this->vals[] = "This $field is already in use.";
         }
     }
 
@@ -63,7 +63,7 @@ class Validation
     private function email($field, $value)
     {
         if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
-            $this->vals[] = "The $field is invalid.";
+            $this->vals[] = "This $field is invalid.";
         }
     }
 
@@ -84,7 +84,7 @@ class Validation
     private function strong($field, $value)
     {
         if (strpbrk($value, '!@#$%¨&*()_+-=?/|;.,[]´~`^') == false) {
-            $this->vals[] = "The $field needs at least one special character";
+            $this->vals[] = "This $field needs at least one special character";
         }
     }
 

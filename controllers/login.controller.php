@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($user) {
 
             if (!password_verify($_POST['password'], $user->password)) {
-                flash()->push('vals_login', ['User or password are incorrect']);
+                flash()->push('vals_login', ['Username or password is incorrect']);
                 header('location: /login');
                 exit();
             }

@@ -1,5 +1,10 @@
 <div class="flex p-8">
-    <img class="rounded-3xl w-[932px] h-[847px] object-cover" src="images/assets/Login.png" alt="">
+    <a class="relative rounded-3xl w-[932px] h-[847px] bg-center bg-cover bg-[url(images/assets/Login.png)]">
+        <div class="font-mono font-semibold text-gray-200 absolute bottom-0 ml-16 mb-24">
+            <h1 class="text-7xl">The</h1>
+            <p class="text-5xl mt-4 ml-12">Kino List</p>
+        </div>
+    </a>
     <div class="mt-44 mx-auto items-center">
         <form method="post" class="px-1 py-1 bg-gray-900 rounded-lg text-lg">
             <button name="btnLogin" type="submit" class="items-center gap-3 px-20 py-3 rounded-lg focus-within:bg-gray-800 focus-within:text-purple-500 focus:outline-none">
@@ -21,9 +26,9 @@
             }
             ?>
             <?php if ($vals = flash()->get('vals_login')): ?>
-                <div class="mt-4 bg-red-950 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-semibold">
+                <div class="mt-4 bg-red-950 border-2 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-mono tracking-tighter">
                     <ul>
-                        <li>Vixe!! Deu ruim Zé!</li>
+                        <li>Uh, oh!</li>
                         <?php foreach ($vals as $val): ?>
                             <li><?= $val ?></li>
                         <?php endforeach; ?>
@@ -31,9 +36,9 @@
                 </div>
             <?php endif; ?>
             <?php if ($vals = flash()->get('vals_register')): ?>
-                <div class="mt-4 bg-red-950 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-semibold">
+                <div class="mt-4 bg-red-950 border-2 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-mono tracking-tighter">
                     <ul>
-                        <li>Vixe!! Deu ruim Zé!</li>
+                        <li>Uh, oh!</li>
                         <?php foreach ($vals as $val): ?>
                             <li><?= $val ?></li>
                         <?php endforeach; ?>
