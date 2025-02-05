@@ -33,12 +33,12 @@ $img = "images/$newImageName.$suffix";
 move_uploaded_file($_FILES['img']['tmp_name'], __DIR__.'/../public/'.$img);
 
 $database->query(
-    "insert into livros ( title, genre, year, description, user_id, img )
+    "insert into kinos ( title, genre, year, description, user_id, img )
     values ( :title, :genre, :year, :description, :user_id, :img )",
     null,
     compact('title', 'genre', 'year', 'description', 'user_id', 'img')
 );
 
-flash()->push('msg', 'Kino successfully registered!');
+flash()->push('msg', 'Kino registered!');
 header('location: /my-kinos');
 exit();

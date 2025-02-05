@@ -7,7 +7,7 @@
             <input type="text" name="search" class="px-2 bg-gray-950 text-lg placeholder-gray-500 text-gray-300 focus:outline-none" placeholder="Search kino">
         </form>
     </div>
-    <?php if ($_REQUEST['search']) {
+    <?php if ($kinos==null){
         require 'partials/_noresults.php';
     } ?>
     <section class="max-w-screen-2xl flex mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

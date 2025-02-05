@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['btnReset'])) {
-    header('location: /');
+    header('location: /my-kinos');
     exit();
 }
 ?>

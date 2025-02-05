@@ -1,10 +1,10 @@
 <div class="flex p-8">
-    <a class="relative rounded-3xl w-[932px] h-[847px] bg-center bg-cover bg-[url(images/assets/Login.png)]">
+    <div class="relative rounded-3xl w-[932px] h-[847px] bg-center bg-cover bg-[url(images/assets/Login.png)]">
         <div class="font-mono font-semibold text-gray-200 absolute bottom-0 ml-16 mb-24">
             <h1 class="text-7xl">The</h1>
             <p class="text-5xl mt-4 ml-12">Kino List</p>
         </div>
-    </a>
+    </div>
     <div class="mt-44 mx-auto items-center">
         <form method="post" class="px-1 py-1 bg-gray-900 rounded-lg text-lg">
             <button name="btnLogin" type="submit" class="items-center gap-3 px-20 py-3 rounded-lg focus-within:bg-gray-800 focus-within:text-purple-500 focus:outline-none">

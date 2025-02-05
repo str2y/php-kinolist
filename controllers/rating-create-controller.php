@@ -10,12 +10,12 @@ $kino_id = $_POST['kino_id'];
 $review = $_POST['review'];
 $rating = $_POST['rating'];
 
-$validacao = Validation::validate([
+$val = Validation::validate([
     'review' => ['required'],
     'rating' => ['required']
 ], $_POST);
 
-if ($validacao->didntPass()) {
+if ($val->didntPass()) {
     header('location: /livro?id='.$kino_id);
     exit();
 }
