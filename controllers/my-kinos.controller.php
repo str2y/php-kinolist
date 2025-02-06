@@ -1,10 +1,10 @@
 <?php
 
-if(!auth()){
+if (!auth()) {
     header('location: /login');
     exit();
 }
 
-$kinos= Kino::mine(auth()->id);
+$kinos = Kino::mine(auth()->id);
 
 view('my-kinos', compact('kinos'));
