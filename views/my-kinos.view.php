@@ -11,7 +11,7 @@ if (isset($_POST['btnRegisterKino'])) {
     require 'partials/_newkino.php';
 }
 
-if ($kinos == null && !isset($_POST['btnRegisterKino'])) {
+if (!$kinos && !isset($_POST['btnRegisterKino'])) {
     require 'partials/_nokinos.php';
 }
 
