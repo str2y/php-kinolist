@@ -22,6 +22,3 @@
         </ul>
     </div>
 </a>
-<!-- flex relative bg-center border border-transparent hover:border-gray-700 bg-cover
-hover:bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(0,0,0,1)),url(<?= $kino->img ?>)]
-bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(0,0,0,.8)),url(<?= $kino->img ?>)] w-[360px] h-[480px] rounded-2xl -->

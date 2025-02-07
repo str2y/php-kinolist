@@ -17,7 +17,7 @@ class Kino
         return $database->query(
             "select
                 k.id, k.title, k.genre, k.year, k.description, k.img
-                , ifnull(round(sum(r.rating)/5.0), 0) as rating_score
+                , ifnull(round(sum(r.rating)/count(r.id)), 0) as rating_score
             from
             kinos k
             left join ratings r on r.kino_id = k.id
