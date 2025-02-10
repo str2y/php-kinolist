@@ -20,7 +20,7 @@
         <menu class="items-center text-lg text-gray-300 flex gap-4">
             <div class="flex items-center gap-2">
                 <?php if (auth()): ?>
-                    <a href="/logout" class="hover:underline">Oi, asdf</a>
+                    <a href="/logout" class="hover:underline">Hey, <?= auth()->name ?>!</a>
                 <?php else: ?>
                     <a href="/login" class="hover:underline">Login</a>
                 <?php endif; ?>

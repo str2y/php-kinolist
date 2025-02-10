@@ -10,3 +10,5 @@ $ratings = $database->query(
     ->fetchAll();
 
 view('kino', compact('kino', 'ratings'));
+
+//name -> users -> id -> ratings -> user_id

@@ -25,13 +25,15 @@
         </div>
     </main>
 </div>
-<div class="justify-between flex max-w-screen-xl mx-auto">
+<div class="justify-between items-center flex max-w-screen-xl mx-auto">
     <h1 class="text-2xl text-gray-200 font-semibold">Reviews</h1>
     <button class="bg-purple-600 px-4 py-3 rounded-lg text-gray-200 flex items-center gap-1.5">
         <i class="text-xl ph ph-star"></i>
         <div class="mb-0.5 text-lg">Review Kino</div>
     </button>
 </div>
-<section class="justify-between flex max-w-screen-xl mx-auto mt-20">
-    <?php require 'partials/_reviews.php'; ?>
+<section class="max-w-screen-xl mx-auto mt-10 space-y-4">
+    <?php foreach ($ratings as $rating) : ?>
+        <?php require 'partials/_ratings.php'; ?>
+    <?php endforeach; ?>
 </section>
