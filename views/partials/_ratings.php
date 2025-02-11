@@ -2,7 +2,7 @@
     <div class="border-r-2 border-gray-800 col-span-2 flex">
         <i class="text-6xl ph ph-user"></i>
         <div class="space-y-1 ml-6">
-            <div class="text-lg text-gray-200"><?= $user->rating ?></div>
+            <div class="text-lg text-gray-200"><?= $rating->name ?></div>
             <div>x kinos reviewed</div>
         </div>
     </div>
