@@ -1,8 +1,12 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    header('location: /');
+    header('location: /my-kinos');
     exit();
+}
+
+if (!auth()) {
+    abort(403);
 }
 
 $user_id = auth()->id;
@@ -16,7 +20,7 @@ $val = Validation::validate([
 ], $_POST);
 
 if ($val->didntPass()) {
-    header('location: /livro?id='.$kino_id);
+    header('location: /kino?id='.$kino_id);
     exit();
 }
 
@@ -28,6 +32,6 @@ values (:user_id, :kino_id, :review, :rating)",
     compact('user_id', 'kino_id', 'review', 'rating')
 );
 
-flash()->push('msg', 'Review posted!');
-header('location: /livro?id=' . $kino_id);
+flash()->push('msg', 'Review published!');
+header('location: /kino?id=' . $kino_id);
 exit();

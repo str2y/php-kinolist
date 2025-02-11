@@ -4,10 +4,11 @@
     hover:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.4),rgba(0,0,0,1)),url(<?= $kino->img ?>)]">
     <div class="absolute right-0 mt-4 mr-4 rounded-full bg-gray-900 p-3 opacity-90 text-gray-100 text-2xl font-bold">
         <div class="flex items-end mb-1 gap-1">
-            <div class="items-center">4,5</div>
-            <div class="pb-1 text-sm font-normal tracking-[0.2em]">/5
+            <div class="">4,5</div>
+            <div class="pb-1 text-sm font-normal tracking-[0.2em]">/5</div>
+            <div class="-mb-0.5 pl-1 text-2xl">
+                <i class="text-purple-500 ph-fill ph-star"></i>
             </div>
-            <div class="pl-1 items-center text-lg">⭐</div>
         </div>
     </div>
     <div class="absolute bottom-0 ml-8 mb-8 text-2xl text-gray-200 font-bold">
