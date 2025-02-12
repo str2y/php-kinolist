@@ -19,7 +19,7 @@ $val = Validation::validate([
     'rating' => ['required']
 ], $_POST);
 
-if ($val->didntPass()) {
+if ($val->didntPass('rating')) {
     header('location: /kino?id='.$kino_id);
     exit();
 }

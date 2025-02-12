@@ -24,7 +24,7 @@
                             <li class="font-normal"><?= $kino->year ?></li>
                         </ul>
                         <p class="font-normal mt-6">Your rating</p>
-                        <input type="hidden" name="rating" id="hiddenRating" value="0">
+                        <input type="hidden" name="rating" id="hiddenRating">
                         <div id="rating" class="flex mt-1 text-purple-500">
                             <svg class="text-purple-500 hover:fill-current" width="28" height="28" fill="none" viewBox="0 0 256 256" stroke="currentColor">
                                 <path stroke-width="10" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path>

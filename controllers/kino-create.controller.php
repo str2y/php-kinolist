@@ -22,7 +22,7 @@ $val = Validation::validate([
     'description' => ['required'],
 ], $_POST);
 
-if ($val->didntPass()) {
+if ($val->didntPass('kino')) {
     header('location: /my-kinos');
     exit();
 }

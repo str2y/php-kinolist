@@ -15,6 +15,16 @@
         </form>
     </div>
 </div>
+<?php if (($vals = flash()->get('vals_kino'))): ?>
+    <div class="mt-4 bg-red-950 border-2 border-gray-800 text-red-500 px-4 py-1 rounded-md border text-lg font-mono tracking-tighter">
+        <ul>
+            <li>Uh, oh!</li>
+            <?php foreach ($vals as $val): ?>
+                <li><?= $val ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
 <?php
 if (isset($_POST['btnRegisterKino'])) {
     require 'partials/_newkino.php';

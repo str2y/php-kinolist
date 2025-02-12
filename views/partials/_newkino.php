@@ -34,7 +34,7 @@
             <button type="reset" class="rounded-lg text-xl">
                 Cancel
             </button>
-            <button type="submit" class="px-6 py-3 bg-purple-600 rounded-lg text-gray-200 text-xl transition delay-50 duration-300 ease-in-out hover:bg-purple-500 shadow hover:shadow-purple-500">
+            <button type="submit" name="btnSaveKino" class="px-6 py-3 bg-purple-600 rounded-lg text-gray-200 text-xl transition delay-50 duration-300 ease-in-out hover:bg-purple-500 shadow hover:shadow-purple-500">
                 Save
             </button>
         </div>
