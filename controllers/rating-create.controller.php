@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    header('location: /my-kinos');
+    header('location: /kino?id='.$kino_id);
     exit();
 }
 
@@ -33,5 +33,5 @@ values (:user_id, :kino_id, :review, :rating)",
 );
 
 flash()->push('msg', 'Review published!');
-header('location: /kino?id=' . $kino_id);
+header('location: /kino?id='.$kino_id);
 exit();
